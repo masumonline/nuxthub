@@ -6,14 +6,11 @@ export default defineNuxtConfig({
   future: { compatibilityVersion: 4 },
   // Nuxt Modules
   // https://nuxt.com/modules
-  modules: [
-    '@nuxthub/core',
-    '@nuxt/eslint'
-  ],
+  modules: ['@nuxthub/core', '@nuxt/eslint', '@nuxtjs/tailwindcss'],
   hub: {
     database: true,
     kv: true,
-    blob: true,
+    blob: false,
     cache: true,
   },
   nitro: {
